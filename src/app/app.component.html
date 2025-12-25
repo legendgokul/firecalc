@@ -5,9 +5,9 @@
   </header>
 
   <div>
-  <h1>Basic Expense</h1>
+  
   <form [formGroup]="form1" (submit)="CalculateExpense(1)">
-
+    <h2>Basic Expense</h2>
     <div class="form-row" formGroupName="grocery_expense">
       <label>Grocery Expense</label>
       <div class="compound-input">
@@ -33,6 +33,7 @@
     </div>
 
       <h2>Essential Expense :</h2>
+
       <div class="form-row" formGroupName="lpg">
         <label>LPG Expense: </label>
         <div class="compound-input">
@@ -191,9 +192,9 @@
         </div>
       </div>
 
-       <h1>lifestyle Expense</h1>
+       <h2>lifestyle Expense</h2>
 
-           <div class="form-row" formGroupName="gym">
+      <div class="form-row" formGroupName="gym">
       <label>gym membership cost</label>
       <div class="compound-input">
         <input type="number" formControlName="value">
@@ -234,7 +235,7 @@
     </div>
 
 
-    <h1>Professional Expense</h1>
+    <h2>Professional Expense</h2>
 
     <div class="form-row"   formGroupName="Adobe">
       <label>Software Subscription like Adobe:</label>

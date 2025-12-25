@@ -1,6 +1,5 @@
 /* Color Palette */
 :root {
-  --primary-green: #27AE60;
   --dark-green: #1E8449;
   --light-green: #D5F4E6;
   --white: #FFFFFF;
@@ -37,8 +36,8 @@ body {
 
 /* Header */
 .app-header {
-  background: linear-gradient(135deg, var(--primary-green) 0%, var(--dark-green) 100%);
-  color: var(--white);
+  background: linear-gradient(135deg, var(#27AE60) 0%, var(--dark-green) 100%);
+  color : blueviolet;
   padding: 45px 20px;
   text-align: center;
   box-shadow: var(--shadow-lg);
@@ -54,8 +53,13 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background: radial-gradient(circle at 20% 50%, rgba(255,255,255,0.1) 0%, transparent 50%),
-              radial-gradient(circle at 80% 80%, rgba(0,0,0,0.1) 0%, transparent 50%);
+  background:
+  radial-gradient(circle at 10% 20%, rgba(95, 58, 231, 0.12), transparent 35%),
+  radial-gradient(circle at 90% 80%, rgba(199, 15, 15, 0.15), transparent 40%),
+  linear-gradient(135deg, rgba(53, 51, 182, 0.04) 25%, transparent 25%),
+  linear-gradient(225deg, rgba(76, 219, 40, 0.04) 25%, transparent 25%),
+  linear-gradient(45deg, rgba(0,0,0,0.04) 25%, transparent 25%),
+  linear-gradient(315deg, rgba(0,0,0,0.04) 25%, transparent 25%);
   pointer-events: none;
 }
 
@@ -86,12 +90,12 @@ body {
 
 /* Section Headings */
 h1 {
-  color: var(--primary-green);
+  color: var(#27AE60);
   font-size: 1.9rem;
   margin-top: 45px;
   margin-bottom: 28px;
   padding-bottom: 14px;
-  border-bottom: 2px solid var(--primary-green);
+  border-bottom: 2px solid var(#27AE60);
   font-weight: 700;
   letter-spacing: -0.3px;
   animation: fadeInLeft 0.6s ease-out;
@@ -102,7 +106,7 @@ h1:first-of-type {
 }
 
 h2 {
-  color: var(--dark-green);
+  color : blue;
   font-size: 1.25rem;
   margin-top: 32px;
   margin-bottom: 20px;
@@ -112,7 +116,7 @@ h2 {
 }
 
 h3 {
-  color: var(--dark-green);
+  color: blueviolet;
   font-size: 1rem;
   margin-top: 26px;
   margin-bottom: 16px;
@@ -132,7 +136,7 @@ form {
   box-shadow: var(--shadow-md);
   animation: fadeInUp 0.7s ease-out;
   backdrop-filter: blur(10px);
-  border-top: 3px solid var(--primary-green);
+  border-top: 3px solid var(#27AE60);
 }
 
 /* Form Row - Clean minimal design */
@@ -141,7 +145,7 @@ form {
   padding: 16px 18px;
   background: linear-gradient(135deg, #F0F9F6 0%, #E8F5E9 100%);
   border-radius: 10px;
-  border-left: 3px solid var(--primary-green);
+  border-left: 3px solid var(#27AE60);
   transition: var(--transition);
   animation: fadeInUp 0.6s ease-out both;
 }
@@ -203,9 +207,9 @@ form {
 
 .compound-input input:focus {
   outline: none;
-  border-color: var(--primary-green);
+  border-color: var(#27AE60);
   background-color: #F0F9F6;
-  box-shadow: 0 0 0 4px rgba(39, 174, 96, 0.12), inset 0 0 0 1px var(--primary-green);
+  box-shadow: 0 0 0 4px rgba(39, 174, 96, 0.12), inset 0 0 0 1px var(#27AE60);
 }
 
 .compound-input select {
@@ -221,9 +225,9 @@ form {
 
 .compound-input select:focus {
   outline: none;
-  border-color: var(--primary-green);
+  border-color: var(#27AE60);
   background-color: #F0F9F6;
-  box-shadow: 0 0 0 4px rgba(39, 174, 96, 0.12), inset 0 0 0 1px var(--primary-green);
+  box-shadow: 0 0 0 4px rgba(39, 174, 96, 0.12), inset 0 0 0 1px var(#27AE60);
 }
 
 .compound-input select option {
@@ -240,8 +244,8 @@ form {
 
 /* Generate Button */
 .generate-btn {
-  background: linear-gradient(135deg, var(--primary-green) 0%, var(--dark-green) 100%);
-  color: var(--white);
+  background: green;
+  color: white;
   border: none;
   padding: 14px 48px;
   font-size: 1rem;
@@ -296,7 +300,8 @@ form {
 
 /* Expense Card */
 .expense-card {
-  background: linear-gradient(135deg, var(--primary-green) 0%, var(--dark-green) 100%);
+  background: linear-gradient(135deg, var(#27AE60) 0%, var(#27AE60) 100%);
+    border-block: 5px solid green;
   color: var(--white);
   padding: 35px;
   border-radius: 14px;
@@ -527,7 +532,7 @@ html {
 
 /* Focus Visible for Accessibility */
 .generate-btn:focus-visible {
-  outline: 2px solid var(--primary-green);
+  outline: 2px solid var(#27AE60);
   outline-offset: 2px;
 }
 
